@@ -1,0 +1,126 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>FotoKoleksi</title> 
+	<link rel="stylesheet" href="style1.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+	<header>
+		<h1 class="logo">F|K</h1>
+		<nav>
+			<ul>
+				<li><a href="#HOME"> HOME </a></li>
+				<li><a href="#GALLERY"> Gallery </a></li>
+				<li><a href="#ABOUT ME"> About Me </a></li>
+				<li><a href="#CONTACT"> Contact Me </a></li>
+			</ul>
+		</nav>
+		<a href="https://www.instagram.com/kevinkristian1318/" target="_blank">
+		<button class="btn-cta">Follow Me</button></a>
+	</header>
+	<section class="home" id="HOME">
+	<div class="home-content">
+		<div class="img2">
+					<img src="C:\Users\Kevin\Desktop\home page\foto & Video\11.jpg">
+					</div>
+		<h1> Hi! </h1>
+		<h2> Nama saya Kevin </h2>
+		<p>
+			Saya seorang fotografer dan videografer yang menghadirkan karya-karya kreatif melalui lensa kamera. Dalam dunia fotografi dan videografi, saya menangkap keindahan, momen berharga, dan cerita-cerita unik. Saya ingin menginspirasi dan membangkitkan emosi melalui karya-karya saya. Dalam foto, saya mengabadikan keindahan alam dan momen-momen istimewa. Sementara dalam video, saya menciptakan pengalaman hidup dan memukau.
+			<br><br>
+			Terima kasih telah mengunjungi halaman ini.
+		</p>
+	</div>
+</section>
+	<div class="container">
+		<div class="header"> 
+			<div class="container" id="GALLERY"></div>
+			<img src="C:\Users\Kevin\Desktop\home page\foto & Video\12.jpg">
+			<h1> Gallery </h1>
+		</div>
+			<div class="video-player">
+			<video src="C:\Users\Kevin\Desktop\home page\foto & Video\Video Drone.mp4" controls class="video-player"></video>
+			<video src="C:\Users\Kevin\Desktop\home page\foto & Video\Video Rubik.mp4" controls class="video-player"></video>
+			</div>
+		</div>
+			<script>
+  // Membuka lightbox saat foto di klik
+  function openLightbox(imageSrc) {
+    var lightbox = document.getElementById('lightbox');
+    var lightboxImage = document.getElementById('lightbox-image');
+    lightboxImage.src = imageSrc;
+    lightbox.style.display = 'block';
+  }
+
+  // Menutup lightbox saat tombol close di klik
+  function closeLightbox() {
+    var lightbox = document.getElementById('lightbox');
+    lightbox.style.display = 'none';
+  }
+</script>
+				<div class="gallery">
+<img src="C:\Users\Kevin\Desktop\home page\foto & Video\1.jpg" onclick="openLightbox(this.src)">
+<img src="C:\Users\Kevin\Desktop\home page\foto & Video\2.jpg" onclick="openLightbox(this.src)">
+<img src="C:\Users\Kevin\Desktop\home page\foto & Video\3.jpg" onclick="openLightbox(this.src)">
+<img src="C:\Users\Kevin\Desktop\home page\foto & Video\4.jpg" onclick="openLightbox(this.src)">
+<img src="C:\Users\Kevin\Desktop\home page\foto & Video\5.jpg" onclick="openLightbox(this.src)">
+<img src="C:\Users\Kevin\Desktop\home page\foto & Video\6.jpg" onclick="openLightbox(this.src)">
+		</div>
+	</div>
+		<div id="ABOUT ME" class="container">
+			<div class="main">
+				<div class="img">
+					<img src="C:\Users\Kevin\Desktop\home page\foto & Video\10.jpg">
+					</div>
+					<div class="text">
+						<h1>About Me</h1>
+						<p>Saya memiliki hobi fotografi dan videografi yang saya tekuni dengan antusiasme. Melalui lensa kamera, saya mengeksplorasi dunia sekitar dan berusaha menangkap momen-momen indah serta membagikannya dengan orang lain. Seni visual telah menjadi cara bagi saya untuk mengekspresikan kreativitas dan melihat dunia dari sudut pandang yang unik. 
+						<br><br>
+						Saya senang mempelajari teknik-teknik baru, mengasah keterampilan saya, dan terus mengembangkan diri dalam bidang ini. Dengan fotografi dan videografi, saya dapat menciptakan kisah yang berkesan dan berbagi keindahan yang tersembunyi di sekitar kita.
+						</p>
+						<div class="button">
+						<a href="file:///C:/Users/Kevin/Desktop/home%20page/More/CV.html" target="_blank" class="btn btn1">More..</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		<footer>
+			<div id="CONTACT" class="footer-content">
+			<div class="footer-content">
+				<h3>Contact Me</h3>
+				<p>
+					Hubungi saya untuk informasi lebih lanjut atau kerjasama dalam proyek yang Anda miliki. Saya sangat senang dapat berkomunikasi dan berkolaborasi dengan Anda. 
+					<br>Silakan hubungi saya melalui kontak di bawah ini:
+				</p>
+				<ul class="social">
+					<li><a href="https://www.instagram.com/kevinkristian1318"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="https://www.facebook.com/Kevin Kristian"><i class="fab fa-facebook"></i></a></li>
+					<li><a href="mailto:Kelvinchristian2808@gmail.com"><i class="far fa-envelope"></i></a></li>
+					<li><a href="https://api.whatsapp.com/send?phone=081703767124"><i class="fab fa-whatsapp"></i></a></li>
+					<li><a href="tel:081703767124"><i class="fas fa-phone"></i></a></li>
+				</ul>
+			</div>
+			<div class="footer-buttom">
+				<p> 
+					&copy;2023 F|K. All rights reserved <br> Syarat dan Ketentuan | Kebijakan Privasi 
+				</p>
+			</div>
+			<div id="lightbox" class="lightbox">
+  <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+  <img id="lightbox-image" src="" alt="Lightbox Image">
+</div>
+</div>
+		</footer>
+  <div class="cursor"></div>
+</div>
+  <script>
+    document.addEventListener('mousemove', function(e) {
+      var cursor = document.querySelector('.cursor');
+      cursor.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+    });
+  </script>
+</body>
+</html>
+
